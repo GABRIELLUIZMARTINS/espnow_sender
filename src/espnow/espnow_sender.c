@@ -32,8 +32,8 @@ void send_espnow(uint32_t signal_v,uint32_t baseline_v,uint32_t threshold_v)
 {
     // Endereço MAC de broadcast
     uint8_t broadcast_addr[] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
-
-    
+    static const char *TAG = "espnow_sender";
+        
     Data_t dados_enviar = {.signal = signal_v, .baseline = baseline_v, .threshold = threshold_v};
 
     // Enviar a estrutura via ESP-NOW para o endereço de broadcast

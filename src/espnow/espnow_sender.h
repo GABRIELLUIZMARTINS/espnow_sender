@@ -19,8 +19,6 @@ typedef struct
     uint32_t threshold;
 } Data_t;
 
-static const char *TAG = "espnow_sender";
-
 void send_espnow(uint32_t signal_v,uint32_t baseline_v,uint32_t threshold_v);
 void espnow_wifi_init();
 
