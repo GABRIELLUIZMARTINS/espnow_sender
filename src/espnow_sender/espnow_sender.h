@@ -10,7 +10,7 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 
-// Estrutura para armazenar os dados a serem enviados
+// Structure to store teh data to be sent
 typedef struct
 {
     uint32_t signal;
