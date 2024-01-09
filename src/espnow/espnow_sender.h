@@ -9,7 +9,6 @@
 #include "esp_wifi.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
-#include "nvs_flash.h"
 
 // Estrutura para armazenar os dados a serem enviados
 typedef struct
@@ -19,7 +18,8 @@ typedef struct
     uint32_t threshold;
 } Data_t;
 
-void send_espnow(uint32_t signal_v,uint32_t baseline_v,uint32_t threshold_v);
-void espnow_wifi_init();
+esp_err_t wifi_init();
+esp_err_t send_espnow(uint32_t signal_v, uint32_t baseline_v, uint32_t threshold_v);
+esp_err_t espnow_wifi_init();
 
 #endif
