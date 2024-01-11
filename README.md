@@ -1,8 +1,8 @@
-# Instruções de Uso do Esp-Now Sender
+# Instructions for Using Esp-Now Sender
 
-Inicialize a Non-Volatile Variable (nvv) ou o Non-Volatile Storage (nvs).
-Utilize a função init_espnow para iniciar o Esp-Now.
+Initialize non-volatile storage (nvs) before initializing esp-now sender.
+Use the init_espnow function to start Esp-Now.
 
-## Envio de Dados
+## Data Submission
 
-Para enviar os dados, faça uso da função send_espnow().
+To send the data, use the send_espnow() function.
